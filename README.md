@@ -7,6 +7,15 @@ Eye-comfort VS Code themes built on the msilabs brand: navy, mint and an amber c
 | Theme | Use it for |
 |---|---|
 | msilabs Dark | Everyday and evening. Navy, the flagship brand theme. |
+| msilabs Light | Daytime and bright rooms. Same color families as Dark, on a soft off-white. |
+
+## Auto switch with macOS appearance
+
+```json
+"window.autoDetectColorScheme": true,
+"workbench.preferredDarkColorTheme": "msilabs Dark",
+"workbench.preferredLightColorTheme": "msilabs Light"
+```
 
 ## Development
 

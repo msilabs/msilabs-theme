@@ -17,7 +17,8 @@
   },
   "contributes": {
     "themes": [
-      { "label": "msilabs Dark", "uiTheme": "vs-dark", "path": "./themes/msilabs-dark-color-theme.json" }
+      { "label": "msilabs Dark", "uiTheme": "vs-dark", "path": "./themes/msilabs-dark-color-theme.json" },
+      { "label": "msilabs Light", "uiTheme": "vs", "path": "./themes/msilabs-light-color-theme.json" }
     ]
   }
 }
