@@ -2,7 +2,7 @@
   "name": "msilabs-theme",
   "displayName": "msilabs Theme",
   "description": "Eye-comfort themes from msilabs: Dark, Light, Notebook and Warm Night.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "msilabs",
   "license": "MIT",
   "repository": { "type": "git", "url": "https://github.com/msilabs/msilabs-theme.git" },

@@ -1,0 +1,33 @@
+name: CI
+on:
+    push:
+        branches: [main]
+    pull_request:
+
+concurrency:
+    group: ci-${{ github.ref }}
+    cancel-in-progress: true
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v7
+            - uses: actions/setup-node@v7
+              with:
+                  node-version: 22
+            - name: Build themes and check contrast
+              run: npm run build
+            - name: Themes in git must be up to date
+              run: git diff --exit-code themes
+            - name: Manifest paths and labels must match the themes
+              run: |
+                  node -e "
+                  const fs = require('fs');
+                  const pkg = require('./package.json');
+                  for (const t of pkg.contributes.themes) {
+                    const theme = JSON.parse(fs.readFileSync(t.path, 'utf8'));
+                    if (theme.name !== t.label) throw new Error('label mismatch: ' + t.label);
+                    console.log('ok', t.label);
+                  }
+                  "

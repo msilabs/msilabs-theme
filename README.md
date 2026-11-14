@@ -1,5 +1,9 @@
 # msilabs Theme
 
+[![Visual Studio Marketplace](https://vsmarketplacebadges.dev/version/msilabs.msilabs-theme.svg)](https://marketplace.visualstudio.com/items?itemName=msilabs.msilabs-theme)
+[![CI](https://github.com/msilabs/msilabs-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/msilabs/msilabs-theme/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/github/license/msilabs/msilabs-theme)](LICENSE)
+
 Eye-comfort VS Code themes built on the msilabs brand: navy, mint and an amber cursor, like the `<|>` logo.
 
 ## Moods
@@ -13,7 +17,7 @@ Eye-comfort VS Code themes built on the msilabs brand: navy, mint and an amber c
 
 ## Install
 
-Build a `.vsix` with `npx @vscode/vsce package` and install it with `code --install-extension msilabs-theme-0.1.0.vsix`. A Marketplace release will follow.
+Search for **msilabs Theme** in the VS Code Extensions view, or install it from the [Marketplace page](https://marketplace.visualstudio.com/items?itemName=msilabs.msilabs-theme). Then pick a theme with `Cmd/Ctrl+K Cmd/Ctrl+T`.
 
 ## Auto switch with macOS appearance
 

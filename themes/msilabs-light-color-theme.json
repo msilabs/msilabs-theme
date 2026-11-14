@@ -305,7 +305,9 @@
         "punctuation",
         "keyword.operator",
         "meta.brace",
-        "meta.delimiter"
+        "meta.delimiter",
+        "begin.bracket",
+        "end.bracket"
       ],
       "settings": {
         "foreground": "#4A5A75"
@@ -323,6 +325,7 @@
         "keyword.operator.logical.python",
         "variable.language",
         "variable.parameter.function.language.special.self.python",
+        "support.variable.magic.python",
         "support.function.construct",
         "keyword.blade",
         "punctuation.section.embedded",
@@ -359,7 +362,8 @@
         "support.constant.property-value.css",
         "variable.other.normal.shell",
         "variable.other.special.shell",
-        "variable.other.positional.shell"
+        "variable.other.positional.shell",
+        "variable.parameter.positional.shell"
       ],
       "settings": {
         "foreground": "#B8391F"
@@ -391,7 +395,8 @@
         "storage.type.primitive",
         "keyword.other.type.php",
         "support.other.namespace.php",
-        "support.class.component"
+        "support.class.component",
+        "fenced_code.block.language"
       ],
       "settings": {
         "foreground": "#1F5FBF"
@@ -417,7 +422,9 @@
       "scope": [
         "support.type.property-name",
         "meta.object-literal.key",
-        "entity.name.tag.yaml"
+        "entity.name.tag.yaml",
+        "variable.css",
+        "variable.argument.css"
       ],
       "settings": {
         "foreground": "#1F5FBF"
@@ -428,6 +435,7 @@
         "constant.character.escape",
         "string.regexp",
         "constant.other.placeholder",
+        "constant.character.format.placeholder",
         "punctuation.decorator",
         "punctuation.definition.decorator",
         "entity.name.function.decorator",
