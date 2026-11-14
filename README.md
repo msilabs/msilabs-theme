@@ -9,6 +9,11 @@ Eye-comfort VS Code themes built on the msilabs brand: navy, mint and an amber c
 | msilabs Dark | Everyday and evening. Navy, the flagship brand theme. |
 | msilabs Light | Daytime and bright rooms. Same color families as Dark, on a soft off-white. |
 | msilabs Notebook | Paper and ink: cream paper, pen-ink syntax, pencil comments, highlighter selection. |
+| msilabs Warm Night | Late night in a dark room. Warm charcoal, little blue light, deliberately softer contrast. |
+
+## Install
+
+Build a `.vsix` with `npx @vscode/vsce package` and install it with `code --install-extension msilabs-theme-0.1.0.vsix`. A Marketplace release will follow.
 
 ## Auto switch with macOS appearance
 
@@ -25,6 +30,21 @@ A theme cannot change the font or draw ruled lines. For the handwritten look:
 - Use a font with cursive italics, such as Victor Mono or Cascadia Code, so the italic comments look handwritten.
 - Optionally use Monaspace Radon, a handwriting-style monospace, for all code.
 - Create a VS Code Profile named "Notebook" and put the theme, `editor.fontFamily` and `"editor.lineHeight": 1.8` there. Other profiles stay untouched.
+
+## Turn off comment italics
+
+```json
+"editor.tokenColorCustomizations": {
+  "[msilabs Dark]": { "textMateRules": [{ "scope": "comment", "settings": { "fontStyle": "" } }] }
+}
+```
+
+## Eye comfort
+
+- No pure black or pure white.
+- Balanced contrast: text is not too bright, comments are still readable.
+- Few syntax colors, so nothing shouts.
+- Light by day, dark at night.
 
 ## Development
 

@@ -19,7 +19,8 @@
     "themes": [
       { "label": "msilabs Dark", "uiTheme": "vs-dark", "path": "./themes/msilabs-dark-color-theme.json" },
       { "label": "msilabs Light", "uiTheme": "vs", "path": "./themes/msilabs-light-color-theme.json" },
-      { "label": "msilabs Notebook", "uiTheme": "vs", "path": "./themes/msilabs-notebook-color-theme.json" }
+      { "label": "msilabs Notebook", "uiTheme": "vs", "path": "./themes/msilabs-notebook-color-theme.json" },
+      { "label": "msilabs Warm Night", "uiTheme": "vs-dark", "path": "./themes/msilabs-warm-night-color-theme.json" }
     ]
   }
 }
