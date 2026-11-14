@@ -1,0 +1,60 @@
+<template>
+    <section class="section container" id="moods">
+        <div class="section-head">
+            <p class="eyebrow">Moods</p>
+            <h2>One brand, four moods</h2>
+            <p>Pick the one that fits the time of day. Every theme keeps the amber cursor and the mint accent.</p>
+        </div>
+
+        <div class="grid">
+            <template for="mood in data.moods">
+                <article class="card">
+                    <p class="swatches" aria-hidden="true">
+                        <template for="color in mood.colors">
+                            <span style="background: {{ color }}"></span>
+                        </template>
+                    </p>
+                    <h3>{{ mood.name }}</h3>
+                    <p>{{ mood.use }}</p>
+                </article>
+            </template>
+        </div>
+    </section>
+</template>
+
+<style>
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+        gap: 1.25rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        background: var(--surface);
+    }
+
+    .card h3 {
+        margin-block: 1rem 0.4rem;
+        font-size: 1.15rem;
+    }
+
+    .card p {
+        color: var(--muted);
+    }
+
+    .card .swatches {
+        display: flex;
+        gap: 0.4rem;
+        margin: 0;
+    }
+
+    .swatches span {
+        width: 1.75rem;
+        height: 1.75rem;
+        border: 1px solid var(--border);
+        border-radius: 50%;
+    }
+</style>

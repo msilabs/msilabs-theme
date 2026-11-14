@@ -1,0 +1,22 @@
+[
+    {
+        "name": "msilabs Dark",
+        "use": "Everyday and evening. Navy, the flagship brand theme.",
+        "colors": ["#14213D", "#1ED6A8", "#B4A5FF", "#EBC57F", "#FFB020"]
+    },
+    {
+        "name": "msilabs Light",
+        "use": "Daytime and bright rooms. Same color families as Dark, on a soft off-white.",
+        "colors": ["#F4F7FB", "#0B7F6E", "#6D3FD0", "#8A5A00", "#B45309"]
+    },
+    {
+        "name": "msilabs Notebook",
+        "use": "Paper and ink: cream paper, pen-ink syntax, pencil comments, highlighter selection.",
+        "colors": ["#F6F1E4", "#2F4BB0", "#1F6E43", "#8A4B14", "#A86200"]
+    },
+    {
+        "name": "msilabs Warm Night",
+        "use": "Late night in a dark room. Warm charcoal, little blue light, softer contrast.",
+        "colors": ["#1C1A17", "#FFB020", "#D99AA5", "#93C4A6", "#DDAE5E"]
+    }
+]

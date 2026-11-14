@@ -1,0 +1,9 @@
+{
+    "name": "msilabs Theme",
+    "tagline": "Four VS Code themes that are easy on the eyes.",
+    "description": "Navy, mint and an amber cursor, like the <|> logo. Dark, Light, Notebook and Warm Night: made for long hours of reading and writing code.",
+    "cta": { "label": "Install", "href": "https://marketplace.visualstudio.com/items?itemName=msilabs.msilabs-theme" },
+    "github": "https://github.com/msilabs/msilabs-theme",
+    "lang": "en",
+    "url": "https://msilabs.github.io"
+}

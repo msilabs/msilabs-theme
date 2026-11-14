@@ -1,0 +1,10 @@
+<head>
+    <title>{{ data.site.name }} | {{ data.site.tagline }}</title>
+</head>
+
+<template>
+    <Hero />
+    <Preview />
+    <Moods />
+    <Install />
+</template>

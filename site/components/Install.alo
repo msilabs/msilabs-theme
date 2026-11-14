@@ -1,0 +1,134 @@
+<template>
+    <section class="section container" id="install">
+        <div class="section-head">
+            <p class="eyebrow">Install</p>
+            <h2>Ready in a minute</h2>
+        </div>
+
+        <ol class="steps">
+            <li>
+                <h3>Install the extension</h3>
+                <p>Search for <strong>msilabs Theme</strong> in the VS Code Extensions view, or use the <a href="{{ data.site.cta.href }}">Marketplace page</a>.</p>
+            </li>
+            <li>
+                <h3>Pick a theme</h3>
+                <p>Press <code>Cmd/Ctrl+K</code> then <code>Cmd/Ctrl+T</code> and choose one of the four msilabs themes.</p>
+            </li>
+            <li>
+                <h3>Optional: follow your system</h3>
+                <p>Switch between Dark and Light automatically with the macOS or Windows appearance.</p>
+                <div class="snippet">
+<pre><code>"window.autoDetectColorScheme": true,
+"workbench.preferredDarkColorTheme": "msilabs Dark",
+"workbench.preferredLightColorTheme": "msilabs Light"</code></pre>
+                    <button type="button" class="copy">Copy</button>
+                </div>
+            </li>
+        </ol>
+
+        <p class="more">Notebook font tips, comment italics and more are in the <a href="{{ data.site.github }}#readme">README</a>.</p>
+    </section>
+</template>
+
+<style>
+    .steps {
+        display: grid;
+        gap: 1.25rem;
+        max-width: var(--reading);
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        counter-reset: step;
+    }
+
+    .steps li {
+        position: relative;
+        padding: 1.25rem 1.5rem 1.25rem 4rem;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        background: var(--surface);
+        counter-increment: step;
+    }
+
+    .steps li::before {
+        content: counter(step);
+        position: absolute;
+        inset: 1.25rem auto auto 1.25rem;
+        display: grid;
+        place-items: center;
+        width: 1.9rem;
+        height: 1.9rem;
+        border-radius: 50%;
+        background: var(--accent);
+        color: var(--on-accent);
+        font-weight: 700;
+    }
+
+    .steps h3 {
+        margin: 0 0 0.3rem;
+        font-size: 1.1rem;
+    }
+
+    .steps p {
+        margin: 0;
+        color: var(--muted);
+    }
+
+    .snippet {
+        position: relative;
+        margin-top: 1rem;
+    }
+
+    .snippet pre {
+        margin: 0;
+        padding: 1rem 5rem 1rem 1rem;
+        overflow-x: auto;
+        border-radius: var(--radius-small);
+        background: var(--surface-soft);
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    .snippet code {
+        padding: 0;
+        background: none;
+    }
+
+    .copy {
+        position: absolute;
+        inset: 0.6rem 0.6rem auto auto;
+        padding: 0.25rem 0.8rem;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--text);
+        font: inherit;
+        font-size: 0.8rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .more {
+        margin-top: 2rem;
+        color: var(--muted);
+        text-align: center;
+    }
+</style>
+
+<script>
+    const button = $el.querySelector('.copy');
+    const code = $el.querySelector('.snippet code');
+
+    button.addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText(code.textContent);
+            button.textContent = 'Copied';
+        } catch {
+            button.textContent = 'Press Ctrl+C';
+        }
+        setTimeout(() => {
+            button.textContent = 'Copy';
+        }, 1800);
+    });
+</script>
