@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>msilabs demo</title>
+    <style>
+      :root { --mint: #1ed6a8; }
+      .btn { color: var(--mint); padding: 0.5rem 1rem; }
+    </style>
+  </head>
+  <body class="bg-slate-900 text-slate-100">
+    <!-- HTML comment -->
+    <main class="mx-auto max-w-2xl p-6">
+      <h1 class="text-3xl font-bold">Start typing.</h1>
+      <a href="https://msilabs.dev" class="btn" id="cta">Keep learning</a>
+    </main>
+    <script>
+      const cta = document.getElementById('cta');
+      cta.addEventListener('click', () => console.log('clicked', 1));
+    </script>
+  </body>
+</html>

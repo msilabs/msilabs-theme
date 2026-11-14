@@ -1,0 +1,28 @@
+/* CSS sample */
+:root {
+  --navy: #14213d;
+  --mint: #1ed6a8;
+  --radius: 12px;
+}
+
+body {
+  margin: 0;
+  font: 400 16px/1.6 'Inter', sans-serif;
+  color: var(--navy);
+}
+
+.card {
+  @apply rounded-lg p-4;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+}
+
+.card:hover,
+#cta::after {
+  background: linear-gradient(135deg, var(--mint), #5eead4);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .card { padding: 0.75rem; width: 100%; }
+}

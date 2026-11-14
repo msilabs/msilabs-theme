@@ -1,0 +1,23 @@
+{
+  "name": "msilabs-theme",
+  "displayName": "msilabs Theme",
+  "description": "Eye-comfort themes from msilabs: Dark, Light, Notebook and Warm Night.",
+  "version": "0.1.0",
+  "publisher": "msilabs",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": { "color": "#14213D", "theme": "dark" },
+  "engines": { "vscode": "^1.75.0" },
+  "categories": ["Themes"],
+  "keywords": ["theme", "dark theme", "light theme", "eye comfort", "notebook", "navy", "msilabs"],
+  "scripts": {
+    "build": "node src/build.mjs",
+    "dev": "node --watch src/build.mjs",
+    "preview": "code --extensionDevelopmentPath=\"$PWD\" \"$PWD/samples\""
+  },
+  "contributes": {
+    "themes": [
+      { "label": "msilabs Dark", "uiTheme": "vs-dark", "path": "./themes/msilabs-dark-color-theme.json" }
+    ]
+  }
+}
