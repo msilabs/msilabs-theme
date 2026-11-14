@@ -1,0 +1,29 @@
+name: Publish
+on:
+    push:
+        tags: ['v*']
+
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+        permissions:
+            id-token: write
+            contents: read
+        steps:
+            - uses: actions/checkout@v7
+            - uses: actions/setup-node@v7
+              with:
+                  node-version: 22
+            - name: Tag must match package.json version
+              run: |
+                  VERSION=$(node -p "require('./package.json').version")
+                  if [ "v$VERSION" != "$GITHUB_REF_NAME" ]; then
+                    echo "Tag $GITHUB_REF_NAME does not match package.json version $VERSION"
+                    exit 1
+                  fi
+            - name: Build themes and check contrast
+              run: npm run build
+            - name: Themes in git must be up to date
+              run: git diff --exit-code themes
+            - name: Publish to Visual Studio Marketplace
+              run: npx @vscode/vsce publish --oidc
