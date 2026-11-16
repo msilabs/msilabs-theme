@@ -3,7 +3,7 @@
 [![Visual Studio Marketplace](https://vsmarketplacebadges.dev/version/msilabs.msilabs-theme.svg)](https://marketplace.visualstudio.com/items?itemName=msilabs.msilabs-theme)
 [![CI](https://github.com/msilabs/msilabs-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/msilabs/msilabs-theme/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/github/license/msilabs/msilabs-theme)](LICENSE)
-[![Socket Badge](https://badge.socket.dev/vscode/package/msilabs.msilabs-theme/0.1.1)](https://socket.dev/vscode/package/msilabs.msilabs-theme)
+[![Socket Badge](https://badge.socket.dev/vscode/package/msilabs.msilabs-theme/0.1.1?platform=universal)](https://socket.dev/vscode/package/msilabs.msilabs-theme/overview/0.1.1)
 
 Eye-comfort VS Code themes built on the msilabs brand: navy, mint and an amber cursor, like the `<|>` logo.
 
