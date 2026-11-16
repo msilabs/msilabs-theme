@@ -1,8 +1,8 @@
 {
   "name": "msilabs-theme",
   "displayName": "msilabs Theme",
-  "description": "Eye-comfort themes from msilabs: Dark, Light, Notebook and Warm Night.",
-  "version": "0.1.1",
+  "description": "Eye-comfort dark and light themes: navy Dark, soft Light, paper Notebook and low blue light Warm Night.",
+  "version": "0.1.2",
   "publisher": "msilabs",
   "license": "MIT",
   "repository": { "type": "git", "url": "https://github.com/msilabs/msilabs-theme.git" },
@@ -12,11 +12,15 @@
   "galleryBanner": { "color": "#14213D", "theme": "dark" },
   "engines": { "vscode": "^1.75.0" },
   "categories": ["Themes"],
-  "keywords": ["theme", "dark theme", "light theme", "eye comfort", "notebook", "navy", "msilabs"],
+  "keywords": [
+    "theme", "dark theme", "light theme", "dark", "light", "eye comfort", "low contrast", "soft",
+    "minimal", "navy", "blue", "warm", "night", "paper", "notebook", "msilabs"
+  ],
   "scripts": {
     "build": "node src/build.mjs",
     "dev": "node --watch src/build.mjs",
-    "preview": "code --extensionDevelopmentPath=\"$PWD\" \"$PWD/samples\""
+    "preview": "code --extensionDevelopmentPath=\"$PWD\" \"$PWD/samples\"",
+    "screenshots": "zsh scripts/screenshots.sh"
   },
   "contributes": {
     "themes": [

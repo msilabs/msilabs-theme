@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2
+
+- README now shows a screenshot of every theme.
+- Clearer description and more search keywords.
+
 ## 0.1.1
 
 - CSS custom properties (`--name`) now use the property color.
