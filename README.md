@@ -7,14 +7,31 @@
 
 Eye-comfort VS Code themes built on the msilabs brand: navy, mint and an amber cursor, like the `<|>` logo.
 
+![msilabs Dark](images/dark.png)
+
 ## Moods
 
-| Theme | Use it for |
-|---|---|
-| msilabs Dark | Everyday and evening. Navy, the flagship brand theme. |
-| msilabs Light | Daytime and bright rooms. Same color families as Dark, on a soft off-white. |
-| msilabs Notebook | Paper and ink: cream paper, pen-ink syntax, pencil comments, highlighter selection. |
-| msilabs Warm Night | Late night in a dark room. Warm charcoal, little blue light, deliberately softer contrast. |
+### msilabs Dark
+
+Everyday and evening. Navy, the flagship brand theme.
+
+### msilabs Light
+
+Daytime and bright rooms. Same color families as Dark, on a soft off-white.
+
+![msilabs Light](images/light.png)
+
+### msilabs Notebook
+
+Paper and ink: cream paper, pen-ink syntax, pencil comments, highlighter selection.
+
+![msilabs Notebook](images/notebook.png)
+
+### msilabs Warm Night
+
+Late night in a dark room. Warm charcoal, little blue light, deliberately softer contrast.
+
+![msilabs Warm Night](images/warm-night.png)
 
 ## Install
 
